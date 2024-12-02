@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-buttons">
+    <img src="img/tetris-logo-5F5DFBCE21-seeklogo.com.png" class="header-image"> <!--https://commons.wikimedia.org/wiki/File:Tetris_logo.png-->
+    <button>
+        <a href="index.html">Home Page</a> 
+    </button>
+    <button>
+        <a href="game-event.html">Games Event</a> 
+    </button>
+    <button>
+        <a href="contact-us.html">Contact Us</a>
+    </button>
+    <button>
+        <a href="about-us.html">About Us</a>
+    </button>
+</div>
+
+<h1>Sign Up Form</h1>
+<div class="form-sign-up">
+    <form action="https://webdevcit.com/displayvalues.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name" style="position: relative; top: 10px;">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" style="position: relative; top: 10px;" >Email Adress</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="start-date" style="position: relative; top: 10px;">Start Data in MTU</label>
+            <input type="date" id="start-date" name="start-date" required>
+        </div>
+        <div class="form-group">
+            <label for="campus" style="position: relative; top: 10px;">MTU Campus</label>
+            <select id="campus" name="campus">
+            <option value="Cork">Cork</option>
+            <option value="Kerry">Kerry</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="department" style="position: relative; top: 10px;">Department of Study</label>
+            <input type="text" id="department" name="department">
+        </div>
+        <div class="form-group">
+            <label for="retro-game" style="position: relative; top: 10px;">Favourite Retro Game</label>
+            <input type="text" id="retro-game" name="retro-game">
+        </div>
+        <div class="form-group">
+            <label style="position: relative; top: 5px;">What genres are you intrested in?</label>
+            <input type="checkbox" id="action" name="game-genre" value="action" style="position: relative; top: 15px; left: 100px;">
+            <label for="action">Action</label>
+            <input type="checkbox" id="adventure" name="game-genre" value="action" style="position: relative; top: 15px; left: 100px;">
+            <label for="adventure">Adventures</label>
+            <input type="checkbox" id="strategy" name="game-genre" value="action" style="position: relative; top: 15px; left: 100px;">
+            <label for="strategy">Strategy</label>
+            <input type="checkbox" id="shooter" name="game-genre" value="action" style="position: relative; top: 15px; left: 100px;">
+            <label for="shooter">Shooter</label>
+        </div>
+        <div class="form-group">
+            <label>Have you previously took place of the club events?</label>
+            <input type="radio" id="yes" name="prevoiusly-events" value="yes" style="position: relative; top: 15px; left: 100px;">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="prevoiusly-events" value="no" style="position: relative; top: 15px; left: 100px;">
+            <label for="no">No</label>
+        </div>
+        <div class="form-group">
+            <label for="events" style="position: relative; top: 10px;">In what events are you intrested?</label>
+            <input type="text" id="events" name="intrest-events">
+        </div>
+        <div class="form-group">
+            <label style="position: relative; top: 10px;">Membership Card</label>
+            <input type="radio" id="photo-card" name="membership-card" value="photo-card" checked style="position: relative; top: 15px; left: 100px;">
+            <label for="photo-card">Photo</label>
+            <input type="radio" id="printed" name="membership-card" value="printed" style="position: relative; top: 15px; left: 100px;">
+            <label for="printed">Printed</label>
+        </div>
+        <div class="form-group">
+            <label for="file-upload" style="position: relative; top: 10px;">Upload a photo of the Membership Card</label>
+            <input type="file" id="file-upload" name="membership-photo" accept="image/*">
+        </div>
+        <div class="form-group">
+            <button style="position: relative; top: 20px;" type="submit">Submit</button>
+            <button style="position: relative; top: 20px;" type="reset">Cancel</button>
+        </div>
+    </form>
+</div>
+    
+</body>
+</html>
